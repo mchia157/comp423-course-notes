@@ -1,0 +1,4 @@
+# Setting up a dev container for Go
+
+* Primary author: [Pilar Chia](https://github.com/mchia157)
+* Reviewer: [Anya Vourakis](https://github.com/v-anya)

@@ -3,9 +3,8 @@
 * Primary author: [Pilar Chia](https://github.com/mchia157)
 * Reviewer: [Anya Vourakis](https://github.com/v-anya)
 
-```py 
-    print("Working with MkDocs")
-```
-!!! note
+# Setting Up a Dev Container with Go - Tutorial
 
-    Hola pilar esta ese una anotacion usando la extension que agregue. Espero te guste.
+## Introduction
+Welcome everyone! In this tutorial, you'll learn how to set up a dev container with the Go programming language in Visual Studio Code. Let's have some fun!
+

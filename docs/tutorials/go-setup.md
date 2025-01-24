@@ -6,3 +6,6 @@
 ```py 
     print("Working with MkDocs")
 ```
+!!! note
+
+    Hola pilar esta ese una anotacion usando la extension que agregue. Espero te guste.

@@ -2,3 +2,7 @@
 
 * Primary author: [Pilar Chia](https://github.com/mchia157)
 * Reviewer: [Anya Vourakis](https://github.com/v-anya)
+
+```py
+    print("Working with MkDocs")
+```

@@ -69,3 +69,38 @@ git commit -m "Initial commit with README"
 `git push --set-upstream origin main`
 
 (4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use git log locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
+
+### Part 2. Setting Up the Development Environment
+#### Step 1. Add Development Container Configuration
+
+1. In VS Code, open the `go-setup-project` directory. You can do this via: File > Open Folder.
+2. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for VS Code.
+3. Create a .devcontainer directory in the root of your project with the following file inside of this "hidden" configuration directory:
+`.devcontainer/devcontainer.json`
+The devcontainer.json file defines the configuration for your development environment. Here, we're specifying the following:
+
+* `name`: A descriptive name for your dev container.
+* `image`: The Docker image to use, in this case, the latest version of a Go environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
+* `customizations`: Installs the official Go plugin by the Go Team at Google.
+```
+{
+  "name": "Go Set Up Project",
+  "image": "mcr.microsoft.com/devcontainers/go:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}
+```
+#### Step 2. Reopen the Project in a VSCode Dev Container
+Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
+
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running go --version to see your dev container is running a recent version of Rust.

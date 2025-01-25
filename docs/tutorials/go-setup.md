@@ -4,5 +4,5 @@
 * Reviewer: [Anya Vourakis](https://github.com/v-anya)
 
 ## Introduction
-Welcome everyone! In this tutorial, you'll learn how to set up a dev container with the Go programming language in Visual Studio Code. Let's have some fun!
+Welcome everyone! In this tutorial, you'll learn how to set up a development contaniner (dev container) for the Go programming language in Visual Studio Code (VS Code). Let's have some fun!
 

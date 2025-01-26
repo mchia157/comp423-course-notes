@@ -118,3 +118,53 @@ The `devcontainer.json` file defines the configuration for your development envi
 Reopen the project in the container by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
 Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `go version` to see your dev container is running a recent version of Go.
+
+### Part 3. Creating a new Go project
+#### Step 1. Initialize a Go module
+
+```bash
+go mod init hello-world
+```
+
+#### Step 2. Create a new Go file 
+By convention, you'll call the file `main.go`
+
+``` go title="main.go"
+package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("Hello COMP423")
+}
+```
+
+#### Step 4. Run the program 
+
+``` bash
+go run main.go
+```
+
+!!! Note
+    The subcommand run compiles and runs the code in one step, but does not create a standalone executable.
+
+#### Step 4. Create an executable file named `hello-world`
+
+``` bash
+go build -o hello-world main.go
+```
+!!! info
+    `-o hello-world` indicates the excecutable is written to the hello-world output file.
+
+!!! Note
+    The subcommand build compiles the code and generates a standalone executable, so the program can be run without installing go.
+
+#### Step 5. Add, commit, and push your work
+
+Write the following on your terminal:
+
+``` bash
+git add .
+git commit -m "Created my first Go project"
+git push origin main
+```

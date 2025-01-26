@@ -154,6 +154,3 @@ git add .
 git commit -m "Created my first Go project"
 git push origin main
 ```
-
-## Conclusion
-Congratulations! You've successfully created your first Go project using Material for MkDocs and configured a development environment.

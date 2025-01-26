@@ -108,18 +108,20 @@ Once your dev container setup completes, close the current terminal tab (trash c
 ### Part 3. Creating a new Go project
 #### Step 1. Initialize a Go module
 
-`go mod init hello-world`
+```bash
+go mod init hello-world
+```
 
 #### Step 2. Create a new Go file 
 By convention, you'll call the file `main.go`
 
-``` go
+``` go title="main.go"
 package main
 
 import "fmt"
 
 func main(){
-  fmt.Println("Hello World!")
+  fmt.Println("Hello COMP423")
 }
 ```
 
@@ -137,6 +139,8 @@ go run main.go
 ``` bash
 go build -o hello-world main.go
 ```
+!!! info
+    `-o hello-world` indicates the excecutable is written to the hello-world output file.
 
 !!! Note
     The subcommand build compiles the code and generates a standalone executable, so the program can be run without installing go.

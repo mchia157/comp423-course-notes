@@ -80,9 +80,10 @@ git commit -m "Initial commit with README"
 
 The `devcontainer.json` file defines the configuration for your development environment. Here, we're specifying the following:
 
-* `name`: A descriptive name for your dev container.
-* `image`: The Docker image to use, in this case, the latest version of a Go environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
-* `customizations`: Installs the official Go plugin by the Go Team at Google.
+* **`name`**: A descriptive name for your dev container.
+* **`image`**: The Docker image to use, in this case, the latest version of a Go environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
+* **`features`**: Ensures Go is installed and up-to-date.
+* **`customizations`**: Installs the official Go plugin by the Go Team at Google.
 ```json title=".devcontainer/devcontainer.json"
 {
   "name": "Go Set Up Project",
@@ -104,4 +105,4 @@ The `devcontainer.json` file defines the configuration for your development envi
 #### Step 2. Reopen the Project in a VSCode Dev Container
 Reopen the project in the container by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
-Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `go --version` to see your dev container is running a recent version of Rust.
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `go --version` to see your dev container is running a recent version of Go.

@@ -105,4 +105,4 @@ The `devcontainer.json` file defines the configuration for your development envi
 #### Step 2. Reopen the Project in a VSCode Dev Container
 Reopen the project in the container by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
-Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `go --version` to see your dev container is running a recent version of Go.
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `go version` to see your dev container is running a recent version of Go.

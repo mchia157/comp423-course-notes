@@ -151,4 +151,4 @@ git push origin main
 ```
 
 ## Conclusion
-Congratulations! You've successfully created your first Go project using Material for MkDocs and configured a development environment.
+Congratulations! You've successfully created a dev container using VS Code for Go development and completed your first project.

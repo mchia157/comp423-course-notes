@@ -76,6 +76,8 @@ git branch -M main
 
 (3) Push your local commits to the GitHub repository:
 
-`git push --set-upstream origin main`
+```bash
+git push --set-upstream origin main
+```
 
 (4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use git log locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.

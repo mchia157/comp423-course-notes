@@ -22,21 +22,24 @@ To start with this tutorial, you'll need to set up (if you haven't yet) the foll
 ### Part 1. Creating the Repository
 #### Step 1. Create a Local Directory and Initialize Git
 
-(A) Open your terminal or command prompt.
+(1) Open your terminal or command prompt.
 
-(B) Create a new directory for your project. 
-!!!Note: 
+(2) Create a new directory for your project. 
+!!! note
+
     If you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first.
+
+    
 ```
 mkdir go-setup-project
 cd go-setup-project
 ```
 
-(C) Initialize a new Git repository:
+(3) Initialize a new Git repository:
 
 `git init`
 
-(D) Create a README file:
+(4) Create a README file:
 
 ```
 echo "# Go Set Up Project" > README.md
@@ -48,9 +51,9 @@ git commit -m "Initial commit with README"
 
 (2) Fill in the details as follows:
 
-* Repository Name: go-setup-project
-* Description: "Tutorial to set up dev containers using Go programming language."
-* Visibility: Public
+* __Repository Name__: go-setup-project
+* __Description__: "Tutorial to set up dev containers using Go programming language."
+* __Visibility__: Public
 
 (3) Do not initialize the repository with a README, .gitignore, or license.
 
@@ -62,7 +65,11 @@ git commit -m "Initial commit with README"
 !!! Warning
     Make sure to replace `<your-username>` with your GitHub username.
 
-(2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
+(2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command:
+```bash
+git branch -M main
+```
+Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
 
 (3) Push your local commits to the GitHub repository:
 
